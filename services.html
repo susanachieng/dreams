@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Dreams Igniters International</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav class="navbar">
+      <a href="index.html"><img src="images/logo1.png" /></a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="services.html" class="active">SERVICES</a></li>
+          <li><a href="join.html">JOIN US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="services.html" class="btn-book">BOOK A SESSION</a></li>
+        </ul>
+      </div>
+
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- HERO -->
+    <section class="services-hero">
+      <div class="hero-content" data-aos="fade-up">
+        <!-- <h1>Our Services</h1>-->
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-grid">
+      <div class="service-card" data-aos="zoom-in">
+        <img src="images/training.jpeg" alt="" />
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h3>Personal Training</h3>
+        <p>Skill-building programs for personal growth and confidence.</p>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/business.jpeg" alt="" />
+        <i class="fa-solid fa-building"></i>
+        <h3>Corporate Training</h3>
+        <p>We train teams on leadership, teamwork, and productivity.</p>
+      </div>
+
+      <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/mentorship.jpeg" alt="" />
+        <i class="fa-solid fa-handshake"></i>
+        <h3>Mentorship</h3>
+        <p>Guiding students, professionals, and organizations.</p>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process-section">
+      <h2 data-aos="fade-up">How Booking Works</h2>
+
+      <div class="process-grid">
+        <div data-aos="fade-up">
+          <i class="fa-solid fa-user"></i>
+          <h3>Fill Form</h3>
+          <p>Name, email, and your goal</p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3>Review</h3>
+          <p>We match you with the right program</p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-solid fa-calendar"></i>
+          <h3>Schedule</h3>
+          <p>We set your session date</p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="300">
+          <i class="fa-solid fa-rocket"></i>
+          <h3>Start</h3>
+          <p>Your transformation begins</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK TRAINING -->
+    <section class="booking-section" data-aos="fade-up">
+      <h2>Book Training Session</h2>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Goal"></textarea>
+        <button type="submit">Book Session</button>
+      </form>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h1>Start Your Transformation Today</h1>
+      <p>We help you move from potential to performance</p>
+    </section>
+
+    <!-- BOOK SESSION MODAL -->
+    <div id="bookingModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2>Book a Session</h2>
+
+        <form id="popupForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="goal" placeholder="Your Goal"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- OPEN BUTTON (place anywhere e.g. hero or booking section) -->
+    <button class="open-modal-btn" onclick="openModal()">Book Session</button>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h2>Dreams Igniters International</h2>
+            <p>
+              We empower individuals through mentorship, training, and
+              motivation to unlock their full potential and achieve success.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@dreamsIgniters.com</p>
+            <p>Phone: +254 700 000 000</p>
+            <div class="socials">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Dreams Igniters International. All Rights Reserved.</p>
+        </div>
+      </footer>
+      <!-----javascript---->
+    </footer>
+    <a
+      href="https://wa.me/254703241511?text=Hello%20I%20want%20to%20book%20a%20session"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+      (function () {
+        emailjs.init("YOUR_PUBLIC_KEY");
+      })();
+    </script>
+  </body>
+</html>

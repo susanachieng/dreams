@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Dreams Igniters International</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="images/logo1.png" alt="logo" />
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html" style="color: #e67e22">HOME</a></li>
+          <li><a href="About.html">ABOUT US</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="join.html">JOIN US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="services.html" class="btn-book">BOOK A SESSION</a></li>
+        </ul>
+      </div>
+      <i c lass="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="header">
+      <div class="text-box"></div>
+    </section>
+
+    <!-- HERO -->
+    <section class="contact-hero">
+      <div class="contact-actions">
+  <div class="action-card">
+    <i class="fa-solid fa-phone"></i>
+    <h3>Call Us</h3>
+    <p>Speak directly with our team</p>
+  </div>
+
+  <div class="action-card">
+    <i class="fa-solid fa-envelope"></i>
+    <h3>Email Us</h3>
+    <p>Send your questions anytime</p>
+  </div>
+
+  <div class="action-card">
+    <i class="fa-brands fa-whatsapp"></i>
+    <h3>WhatsApp</h3>
+    <p>Fast response support</p>
+  </div>
+</div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <div class="contact-info">
+  <h2>Contact Information</h2>
+
+  <div class="info-item">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Nairobi, Kenya</span>
+  </div>
+
+  <div class="info-item">
+    <i class="fa-solid fa-phone"></i>
+    <span>+254 700 000 000</span>
+  </div>
+
+  <div class="info-item">
+    <i class="fa-solid fa-envelope"></i>
+    <span>info@dreamsigniters.com</span>
+  </div>
+</div>
+      <!-- CONTACT FORM -->
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" />
+          <textarea rows="6" placeholder="Your Message"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h2>Dreams Igniters International</h2>
+            <p>
+              We empower individuals through mentorship, training, and
+              motivation to unlock their full potential and achieve success.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="join.html">JOIN US</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@dreamsIgniters.com</p>
+            <p>Phone: +254 703241511</p>
+            <div class="socials">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Dreams Igniters International. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </footer>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

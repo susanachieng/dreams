@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us - Dreams Igniters International</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="images/logo1.png" alt="logo" />
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="About.html">ABOUT US</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="join.html" style="color: #e67e22">JOIN US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="services.html" class="btn-book">BOOK A SESSION</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="join-hero">
+      <div class="join-hero-content">
+        <h1>Join Our Mission</h1>
+
+        <p>
+          Together we can empower young people, transform communities, build
+          leaders, and create opportunities for lasting impact.
+        </p>
+
+        <a href="#application" class="hero-btn"> Become a Partner </a>
+      </div>
+    </section>
+
+    <!-- JOIN OPTIONS -->
+
+    <section class="join-us">
+      <h1>How You Can Get Involved</h1>
+
+      <p>
+        Dreams Igniters International welcomes individuals, organizations,
+        schools, institutions, and companies to work with us in creating
+        positive change.
+      </p>
+
+      <div class="join-grid">
+        <div class="join-card">
+          <i class="fa-solid fa-hand-holding-heart join-icon"></i>
+
+          <div class="join-content">
+            <h3>Sponsorship</h3>
+
+            <p>
+              Support youth mentorship programs, leadership training,
+              entrepreneurship development and community outreach.
+            </p>
+
+            <a href="#application" class="hero-btn"> Sponsor Us </a>
+          </div>
+        </div>
+
+        <div class="join-card">
+          <i class="fa-solid fa-handshake join-icon"></i>
+
+          <div class="join-content">
+            <h3>Partnership</h3>
+
+            <p>
+              Collaborate with us through strategic partnerships, events,
+              projects and community development initiatives.
+            </p>
+
+            <a href="#application" class="hero-btn"> Partner With Us </a>
+          </div>
+        </div>
+
+        <div class="join-card">
+          <i class="fa-solid fa-people-group join-icon"></i>
+
+          <div class="join-content">
+            <h3>Volunteer</h3>
+
+            <p>
+              Share your skills, expertise and passion to help transform lives
+              and support our empowerment programs.
+            </p>
+
+            <a href="#application" class="hero-btn"> Volunteer </a>
+          </div>
+        </div>
+
+        <div class="join-card">
+          <i class="fa-solid fa-user-graduate join-icon"></i>
+
+          <div class="join-content">
+            <h3>Become a Mentor</h3>
+
+            <p>
+              Guide students, young professionals, entrepreneurs and future
+              leaders through mentorship.
+            </p>
+
+            <a href="#application" class="hero-btn"> Become a Mentor </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+
+    <section class="stats">
+      <div class="stat-box">
+        <h2>500+</h2>
+        <p>People Mentored</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>50+</h2>
+        <p>Training Programs</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>20+</h2>
+        <p>Partner Organizations</p>
+      </div>
+
+      <div class="stat-box">
+        <h2>10+</h2>
+        <p>Communities Reached</p>
+      </div>
+    </section>
+
+    <!-- APPLICATION FORM -->
+
+    <section class="join-form" id="application">
+      <h1>Partnership & Sponsorship Application</h1>
+
+      <form action="https://formspree.io/f/mbdvlljb" method="POST"></form>
+        <input type="text" name="organization" placeholder="Organization / Company Name" required />
+       <input type="text" name="contact_person" placeholder="Contact Person" required />
+        <input type="email" name="email" placeholder="Email Address" required /> 
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+
+        <select name="Interest" required>
+          <option value="">Select Interest</option>
+
+          <option>Sponsorship</option>
+
+          <option>Partnership</option>
+
+          <option>Volunteer</option>
+
+          <option>Mentorship</option>
+        </select>
+
+        <textarea
+          rows="6"
+          placeholder="Tell us how you would like to support or partner with us"
+        ></textarea>
+
+        <button type="submit" class="hero-btn">Submit Application</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+
+   <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2>Dreams Igniters International</h2>
+          <p>
+            We empower individuals through mentorship, training, and motivation
+            to unlock their full potential and achieve success.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="join.html">JOIN US</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: info@dreamsIgniters.com</p>
+          <p>Phone: +254 700 000 000</p>
+          <div class="socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Dreams Igniters International. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
