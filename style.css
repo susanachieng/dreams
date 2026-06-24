@@ -80,7 +80,7 @@ p {
 }
 /* HERO BACKGROUND */
 .header {
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
   background-image: url(images/imagges.png);
   background-position: center;
@@ -141,6 +141,9 @@ p {
   background: #e67e22;
   transition: 1s;
 }
+.fa-bars {
+  display: none;
+}
 .nav-links .fa-solid {
   display: none;
 }
@@ -184,10 +187,14 @@ p {
 }
 @media (max-width: 768px) {
   .header {
-    min-height: 70vh;
-    background-position: center top;
+    min-height: 60vh;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 22px;
+    cursor: pointer;
   }
 }
 /* =========================
